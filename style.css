@@ -1,0 +1,130 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+
+.nav-section {
+   position: sticky;
+   top: 0;
+}
+
+.nav-container {
+   display: flex;
+   justify-content: space-between;
+   background-color: black;
+   padding-left: 3%;
+   padding-right: 30px;
+}
+
+.logo {
+   font: bold;
+   padding: 20px;
+   color: rgb(255, 255, 255);
+}
+
+.logo:hover {
+   cursor: pointer;
+}
+
+.nav-item {
+   display: flex;
+}
+
+.nav-items {
+   margin: 20px 0 0px 0px;
+   display: flex;
+   list-style: none;
+   color: white;
+}
+
+.nav-items li {
+   margin: 0px 20px 20px 0px;
+
+}
+
+.nav-items li:hover {
+   color: rgb(186, 180, 180);
+   cursor: pointer;
+}
+
+.below-nav {
+   display: flex;
+   margin: 100px;
+   justify-content: space-between;
+}
+
+.main-text h1 {
+   font-size: xx-large;
+}
+
+.main-text p {
+   font-size: medium;
+   padding: 10px 0 80px 0px;
+}
+
+.btn {
+   padding: 10px 20px 10px 20px;
+   border-radius: 5px;
+   background-color: rgb(81, 16, 107);
+   color: white;
+}
+
+.btn1 {
+   padding: 5px 20px 5px 20px;
+   border-radius: 5px;
+   background-color: rgb(81, 16, 107);
+   color: white;
+}
+
+
+.btn:hover {
+   background-color: rgb(0, 0, 0);
+   color: white;
+}
+
+.btn1:hover {
+   background-color: rgb(0, 0, 0);
+   color: white;
+}
+
+.card-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 10px;
+   /* margin-bottom: 100px; */
+}
+
+.card {
+   height: 200px;
+   width: 300px;
+   background-color: aliceblue;
+   padding: 20px;
+   color: rgb(37, 37, 37);
+}
+
+.courses-card:hover {
+   cursor: pointer;
+   border: 0.5px solid rgb(205, 205, 205);
+}
+
+.courses-option-link li:hover {
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.small-line {
+   height: 20px;
+   background-color: rgb(151, 151, 151);
+   width: 1px;
+}
+
+.test-card {
+   padding: 40px 30px 40px 30px;
+   background-color: beige;
+   border-radius: 8px;
+}
+
+.test-card:hover {
+   background-color: rgb(243, 243, 173);
+
+}

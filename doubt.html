@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="nav-section">
+        <nav>
+            <div class="nav-container">
+                <div>
+                    <h1 onclick="goToHome()" class="logo">Learner's Hub</h1>
+                </div>
+                <div class="nav-item">
+                    <ul class="nav-items">
+                        <li onclick="goToCourses()">Courses</li>
+                        <li onclick="goToTest()">Test series</li>
+                        <li onclick="goToPractice()">Practice</li>
+                        <li onclick="goToDoubt()">Ask Doubt</li>
+                        <li onclick="goToStudyMaterial()">Study Material</li>
+                        <li onclick="goToStore()">Store</li>
+                        <li onclick="">
+                            <button
+                                style=" padding: 2px 5px ; background-color: blueviolet; color: white; border-radius: 5px;">
+                                Login/SignUp
+                            </button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section style="padding: 20px 60px 20px 60px; border-radius: 5px;">
+        <div style="display: flex; justify-content: space-between; height: 50vh;">
+            <div>
+                <h1 style="padding-top: 70px; padding-bottom: 30px;">
+                    Go from questioning to understanding!
+                </h1>
+                <p>Discover the benefits of Ask a Doubts!</p>
+            </div>
+            <div>
+                <img style="width: 400px; height: 300px;" src="./assets/doubt.png" alt="">
+            </div>
+        </div>
+        <div style="height: 1px; width: 100%; background-color: rgb(194, 194, 194);"></div>
+        <div>
+            <h1
+                style="display: flex; font-weight: 900; font-size: xx-large; justify-content: center; align-items: center; padding: 40px;">
+                Ask a question. Get a verified answer.</h1>
+        </div>
+        <!-- Begin Form -->
+        <form action="process_doubt.php" method="POST" enctype="multipart/form-data">
+            <div style="width: 100%; border: 0.5px solid rgb(226, 225, 225);">
+                <div style="padding: 30px">
+                    <h1>We are here to solve your Doubts</h1>
+                    <p>Submit your doubt in the form listed below, our team will reach back to you with the solution.
+                    </p>
+                    <p>*Note: Submit your doubt with your registered mobile number.</p>
+                </div>
+                <div style="padding: 10px 30px;">
+                    <p>First Name</p>
+                    <input style="width: 80%; padding: 10px;" type="text" name="first_name" placeholder="Full Name"
+                        required>
+                </div>
+                <div style="padding: 10px 30px;">
+                    <p>Email Address</p>
+                    <input style="width: 80%; padding: 10px;" type="email" name="email" placeholder="Email" required>
+                </div>
+                <div style="padding: 10px 30px;">
+                    <p>Phone Number</p>
+                    <input style="width: 80%; padding: 10px;" type="number" name="phone" placeholder="Phone Number"
+                        required>
+                </div>
+                <div style="padding: 10px 30px;">
+                    <p>Course Name</p>
+                    <input style="width: 80%; padding: 10px;" type="text" name="course_name" placeholder="Course Name"
+                        required>
+                </div>
+                <div style="padding: 10px 30px;">
+                    <p>Doubt Type</p>
+                    <select style="width: 81.5%; padding: 10px;" name="doubt_type" id="doubt_type" required>
+                        <option value="course_related">Course Related</option>
+                        <option value="test_related">Test Related</option>
+                        <option value="quiz_related">Quiz Related</option>
+                        <option value="payment_related">Payment Related</option>
+                    </select>
+                </div>
+                <div style="padding: 10px 30px;">
+                    <p>Doubts in Words (Up to 255 words)</p>
+                    <textarea style="width: 80%; padding: 10px;" name="doubt_text" id="doubt_text" rows="12"
+                        placeholder="Write your doubt here..." required></textarea>
+                </div>
+                <div style="padding: 10px 30px;">
+                    <p>Upload Doubts image</p>
+                    <input style="width: 80%; padding: 10px; border: 0.5px solid rgb(201, 201, 201);" type="file"
+                        name="upimg" accept="image/*" required>
+                </div>
+                <div style="padding: 10px 30px;">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </div>
+        </form>
+        <!-- End Form -->
+
+        </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div
+            style="background-color: black; color: rgb(153, 147, 147); display: flex; justify-content: center; align-items: center; padding: 10px;">
+            <p>Created with Love By Priya!</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
