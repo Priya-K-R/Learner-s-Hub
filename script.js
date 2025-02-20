@@ -24,8 +24,13 @@ function goToStudyMaterial() {
 
 function goToPractice()
 {
-    window.location.href = "practice.html"
+    window.location.href = "practice.html";
 }
+
+function goToNEETTest(){
+    window.location.href = "neettest.html";
+}
+
 function filterCards(category , headingId) {
     let cards = document.querySelectorAll(".card");
     // let heading = document.querySelectorAll(".courses-heading"); // Select the heading
@@ -44,6 +49,25 @@ function filterCards(category , headingId) {
 
     cards.forEach(card => {
         if (category === "all" ){
+            card.style.display = "block";
+        }
+            else if(card.getAttribute("data-category") === category) {
+            card.style.display = "block"; // Show matching cards
+        } else {
+            card.style.display = "none"; // Hide non-matching cards
+        }
+    });
+}
+
+
+
+function filterTestCards(category) {
+    let cards = document.querySelectorAll(".aTCard");
+    console.log(cards)
+
+    cards.forEach(card => {
+        if (category === "all-tests" ){
+            console.log(card)
             card.style.display = "block";
         }
             else if(card.getAttribute("data-category") === category) {
