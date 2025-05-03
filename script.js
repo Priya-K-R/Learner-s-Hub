@@ -1,36 +1,3 @@
-function goToCourses() {
-        window.location.href = "courses.html";
-}
-
-function goToHome() {
-    window.location.href = "index.html";
-}
-
-function goToTest() {
-    window.location.href = "test.html";
-}
-
-function goToStore() {
-    window.location.href = "store.html";
-}
-
-function goToDoubt() {
-    window.location.href = "doubt.html";
-}
-
-function goToStudyMaterial() {
-    window.location.href = "studyMaterial.html";
-}
-
-function goToPractice()
-{
-    window.location.href = "practice.html";
-}
-
-function goToNEETTest(){
-    window.location.href = "neettest.html";
-}
-
 function filterCards(category , headingId) {
     let cards = document.querySelectorAll(".card");
     // let heading = document.querySelectorAll(".courses-heading"); // Select the heading
@@ -77,3 +44,25 @@ function filterTestCards(category) {
         }
     });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
